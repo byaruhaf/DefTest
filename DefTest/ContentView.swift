@@ -7,13 +7,7 @@
 
 import SwiftUI
 import Foundation
-import Defaults
 import StoreKit
-
-extension Defaults.Keys {
-    static let localSavedStudents = Key<Set<String>>("localSaved", default: Set<String>())
-//    static let distanceMaxValue = Key<Double>("distanceMaxValue", default: 320.0)
-}
 
 struct ContentView: View {
     var body: some View {
@@ -48,10 +42,11 @@ struct StudentListView: View {
         .padding()
     }
 }
+final class Test: ObservableObject {}
 
 struct StudentDetailView: View {
-    @Default(.localSavedStudents) var localSavedStudents
-//    @Default(.distanceMaxValue) var distanceMaxValue
+    @ObservedObject var test = Test()
+
     var body: some View {
         VStack(spacing: 40) {
             Image(systemName: "globe")

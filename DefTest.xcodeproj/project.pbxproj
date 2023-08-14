@@ -11,7 +11,6 @@
 		5F0869A82A89ACC600D4510B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0869A72A89ACC600D4510B /* ContentView.swift */; };
 		5F0869AA2A89ACC900D4510B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0869A92A89ACC900D4510B /* Assets.xcassets */; };
 		5F0869AD2A89ACC900D4510B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0869AC2A89ACC900D4510B /* Preview Assets.xcassets */; };
-		5F0869B52A89AD7B00D4510B /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0869B42A89AD7B00D4510B /* Defaults */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0869B52A89AD7B00D4510B /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +84,6 @@
 			);
 			name = DefTest;
 			packageProductDependencies = (
-				5F0869B42A89AD7B00D4510B /* Defaults */,
 			);
 			productName = DefTest;
 			productReference = 5F0869A22A89ACC600D4510B /* DefTest.app */;
@@ -117,7 +114,6 @@
 			);
 			mainGroup = 5F0869992A89ACC600D4510B;
 			packageReferences = (
-				5F0869B32A89AD7B00D4510B /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = 5F0869A32A89ACC600D4510B /* Products */;
 			projectDirPath = "";
@@ -347,25 +343,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5F0869B32A89AD7B00D4510B /* XCRemoteSwiftPackageReference "Defaults" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Defaults";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5F0869B42A89AD7B00D4510B /* Defaults */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5F0869B32A89AD7B00D4510B /* XCRemoteSwiftPackageReference "Defaults" */;
-			productName = Defaults;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F08699A2A89ACC600D4510B /* Project object */;
 }
