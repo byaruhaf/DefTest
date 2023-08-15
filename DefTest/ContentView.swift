@@ -11,6 +11,7 @@ import StoreKit
 
 struct ContentView: View {
     var body: some View {
+        let _ = Self._printChanges()
         VStack(spacing: 40) {
             Image(systemName: "soccerball")
                 .imageScale(.large)
@@ -30,6 +31,7 @@ struct ContentView: View {
 struct StudentListView: View {
     @Environment(\.requestReview) private var requestReview
     var body: some View {
+        let _ = Self._printChanges()
         VStack(spacing: 40) {
             Text("Student List")
                 NavigationLink {
@@ -48,6 +50,7 @@ struct StudentDetailView: View {
     @ObservedObject var test = Test()
 
     var body: some View {
+        let _ = Self._printChanges()
         VStack(spacing: 40) {
             Image(systemName: "globe")
                 .imageScale(.large)
